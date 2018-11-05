@@ -14,7 +14,7 @@ public:
 
     void PrintMainMenu();
 
-    Menu();
+    explicit Menu(std::string);
 
     BruteForce bruteForce;
     HeldKarp heldKarp;

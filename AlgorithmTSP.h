@@ -17,8 +17,8 @@ public:
         delete[] graph_;
     };
 
-    AlgorithmTSP() {
-        DataLoader dataLoader;
+    AlgorithmTSP(std::string fileName) {
+        DataLoader dataLoader(fileName);
         graphSize_ = dataLoader.GetGraphSizeFromFile();
         ReserveMemoryForGraph();
         dataLoader.AddEdgesFromFileToGraph(graph_, graphSize_);

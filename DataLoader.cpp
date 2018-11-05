@@ -8,7 +8,7 @@
 #include <string>
 
 
-DataLoader::DataLoader() : myFile_("Graph.txt") {
+DataLoader::DataLoader(std::string fileName) : myFile_(fileName) {
 }
 
 DataLoader::~DataLoader() {

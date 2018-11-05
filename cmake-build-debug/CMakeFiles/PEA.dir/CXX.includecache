@@ -12,12 +12,6 @@ Q:/Studia/CLion/PEA/DataLoader.h
 iostream
 -
 
-Q:/Studia/CLion/PEA/BruteForce.cpp
-BruteForce.h
-Q:/Studia/CLion/PEA/BruteForce.h
-limits
--
-
 Q:/Studia/CLion/PEA/BruteForce.h
 AlgorithmTSP.h
 Q:/Studia/CLion/PEA/AlgorithmTSP.h
@@ -26,5 +20,31 @@ vector
 
 Q:/Studia/CLion/PEA/DataLoader.h
 fstream
+-
+
+Q:/Studia/CLion/PEA/HeldKarp.h
+AlgorithmTSP.h
+Q:/Studia/CLion/PEA/AlgorithmTSP.h
+vector
+-
+
+Q:/Studia/CLion/PEA/Test.cpp
+Test.h
+Q:/Studia/CLion/PEA/Test.h
+BruteForce.h
+Q:/Studia/CLion/PEA/BruteForce.h
+HeldKarp.h
+Q:/Studia/CLion/PEA/HeldKarp.h
+Timer.h
+Q:/Studia/CLion/PEA/Timer.h
+vector
+-
+
+Q:/Studia/CLion/PEA/Test.h
+string
+-
+
+Q:/Studia/CLion/PEA/Timer.h
+windows.h
 -
 

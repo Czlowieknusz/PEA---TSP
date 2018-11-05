@@ -1,6 +1,6 @@
 #include "Menu.h"
 
 int main() {
-    Menu menu;
+    Menu menu("Graph.txt");
     return 0;
 }

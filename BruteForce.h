@@ -10,7 +10,7 @@
 
 class BruteForce : public AlgorithmTSP {
 public:
-    BruteForce() = default;
+    BruteForce(std::string);
 
     void CalculatePath(unsigned) final;
 

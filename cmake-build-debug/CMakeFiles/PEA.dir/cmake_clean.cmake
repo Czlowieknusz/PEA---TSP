@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PEA.dir/Menu.cpp.obj"
   "CMakeFiles/PEA.dir/HeldKarp.cpp.obj"
   "CMakeFiles/PEA.dir/BruteForce.cpp.obj"
+  "CMakeFiles/PEA.dir/Test.cpp.obj"
+  "CMakeFiles/PEA.dir/Timer.cpp.obj"
   "PEA.pdb"
   "PEA.exe"
   "PEA.exe.manifest"

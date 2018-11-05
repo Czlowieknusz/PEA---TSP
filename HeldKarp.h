@@ -10,7 +10,7 @@
 
 class HeldKarp : public AlgorithmTSP {
 public:
-    HeldKarp() = default;
+    HeldKarp(std::string);
 
     void CalculatePath(unsigned) final;
 

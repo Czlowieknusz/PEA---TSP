@@ -257,6 +257,60 @@ Menu.cpp.s:
 	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
+Test.obj: Test.cpp.obj
+
+.PHONY : Test.obj
+
+# target to build an object file
+Test.cpp.obj:
+	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Test.cpp.obj
+.PHONY : Test.cpp.obj
+
+Test.i: Test.cpp.i
+
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
+Timer.obj: Timer.cpp.obj
+
+.PHONY : Timer.obj
+
+# target to build an object file
+Timer.cpp.obj:
+	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Timer.cpp.obj
+.PHONY : Timer.cpp.obj
+
+Timer.i: Timer.cpp.i
+
+.PHONY : Timer.i
+
+# target to preprocess a source file
+Timer.cpp.i:
+	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Timer.cpp.i
+.PHONY : Timer.cpp.i
+
+Timer.s: Timer.cpp.s
+
+.PHONY : Timer.s
+
+# target to generate assembly for a file
+Timer.cpp.s:
+	$(MAKE) -f CMakeFiles\PEA.dir\build.make CMakeFiles/PEA.dir/Timer.cpp.s
+.PHONY : Timer.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -308,6 +362,12 @@ help:
 	@echo ... Menu.obj
 	@echo ... Menu.i
 	@echo ... Menu.s
+	@echo ... Test.obj
+	@echo ... Test.i
+	@echo ... Test.s
+	@echo ... Timer.obj
+	@echo ... Timer.i
+	@echo ... Timer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

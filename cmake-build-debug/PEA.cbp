@@ -113,6 +113,18 @@
 		<Unit filename="Q:/Studia/CLion/PEA/Menu.h">
 			<Option target="PEA"/>
 		</Unit>
+		<Unit filename="Q:/Studia/CLion/PEA/Test.cpp">
+			<Option target="PEA"/>
+		</Unit>
+		<Unit filename="Q:/Studia/CLion/PEA/Test.h">
+			<Option target="PEA"/>
+		</Unit>
+		<Unit filename="Q:/Studia/CLion/PEA/Timer.cpp">
+			<Option target="PEA"/>
+		</Unit>
+		<Unit filename="Q:/Studia/CLion/PEA/Timer.h">
+			<Option target="PEA"/>
+		</Unit>
 		<Unit filename="Q:/Studia/CLion/PEA/main.cpp">
 			<Option target="PEA"/>
 		</Unit>

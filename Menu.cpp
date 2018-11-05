@@ -3,8 +3,9 @@
 //
 
 #include "Menu.h"
+#include "Test.h"
 
-Menu::Menu() {
+Menu::Menu(std::string fileName) : bruteForce(fileName), heldKarp(fileName) {
     MainMenu();
 }
 
@@ -14,6 +15,7 @@ void Menu::PrintMainMenu() {
     std::cout << "1. Print loaded Graph." << std::endl;
     std::cout << "2. Calculate path using Brute Force." << std::endl;
     std::cout << "3. Calculate path using Held-Karp." << std::endl;
+    std::cout << "4. Test algorithms." << std::endl;
     std::cout << "0. Finish executing program." << std::endl;
 }
 
@@ -21,7 +23,7 @@ void Menu::MainMenu() {
     while (true) {
         PrintMainMenu();
         int userOption = -1;
-        while (userOption < 0 || userOption > 3) {
+        while (userOption < 0 || userOption > 4) {
             std::cout << "Your option: ";
             std::cin >> userOption;
         }
@@ -45,6 +47,11 @@ void Menu::MainMenu() {
                 std::cout << std::endl;
                 heldKarp.CalculatePath(startVertexHeldKarp);
                 break;
+            case 4: {
+                Test test;
+                test.MakeTests();
+                break;
+            }
             default:
                 break;
         }

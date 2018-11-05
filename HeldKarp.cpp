@@ -6,12 +6,15 @@
 #include <limits>
 #include <algorithm>
 
+HeldKarp::HeldKarp(std::string fileName) : AlgorithmTSP(std::move(fileName)) {
+}
+
 void HeldKarp::CalculatePath(unsigned startVertex) {
     if (startVertex >= 0 && startVertex < graphSize_) {
         std::vector<bool> visitedVertices(graphSize_, false);
         visitedVertices[startVertex] = true;
         unsigned minPrice = CalculatePath(startVertex, visitedVertices);
-        std::cout << "Min price is equal to: " << minPrice << std::endl;
+        //std::cout << "Min price is equal to: " << minPrice << std::endl;
     } else {
         std::cout << "Vertex is not a part of the graph" << std::endl;
     }

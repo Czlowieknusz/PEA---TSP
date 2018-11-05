@@ -5,13 +5,16 @@
 #include "BruteForce.h"
 #include <limits>
 
+BruteForce::BruteForce(std::string fileName) : AlgorithmTSP(std::move(fileName)) {
+}
+
 void BruteForce::CalculatePath(unsigned startVertex) {
     if (startVertex >= 0 && startVertex < graphSize_) {
         unsigned minPrice = std::numeric_limits<unsigned>::max();
         std::vector<bool> visitedVertexes(graphSize_, false);
         visitedVertexes[startVertex] = true;
         CalculatePath(startVertex, minPrice, 0, visitedVertexes);
-        std::cout << "Minimal price is equal to " << minPrice << std::endl;
+        //std::cout << "Minimal price is equal to " << minPrice << std::endl;
     } else {
         std::cout << "Vertex is not a part of the graph" << std::endl;
     }

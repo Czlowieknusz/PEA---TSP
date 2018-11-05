@@ -9,7 +9,7 @@
 
 class DataLoader {
 public:
-    DataLoader();
+    explicit DataLoader(std::string);
 
     ~DataLoader();
 

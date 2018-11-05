@@ -23,6 +23,18 @@ CMakeFiles/PEA.dir/Menu.cpp.obj: ../DataLoader.h
 CMakeFiles/PEA.dir/Menu.cpp.obj: ../HeldKarp.h
 CMakeFiles/PEA.dir/Menu.cpp.obj: ../Menu.cpp
 CMakeFiles/PEA.dir/Menu.cpp.obj: ../Menu.h
+CMakeFiles/PEA.dir/Menu.cpp.obj: ../Test.h
+
+CMakeFiles/PEA.dir/Test.cpp.obj: ../AlgorithmTSP.h
+CMakeFiles/PEA.dir/Test.cpp.obj: ../BruteForce.h
+CMakeFiles/PEA.dir/Test.cpp.obj: ../DataLoader.h
+CMakeFiles/PEA.dir/Test.cpp.obj: ../HeldKarp.h
+CMakeFiles/PEA.dir/Test.cpp.obj: ../Test.cpp
+CMakeFiles/PEA.dir/Test.cpp.obj: ../Test.h
+CMakeFiles/PEA.dir/Test.cpp.obj: ../Timer.h
+
+CMakeFiles/PEA.dir/Timer.cpp.obj: ../Timer.cpp
+CMakeFiles/PEA.dir/Timer.cpp.obj: ../Timer.h
 
 CMakeFiles/PEA.dir/main.cpp.obj: ../AlgorithmTSP.h
 CMakeFiles/PEA.dir/main.cpp.obj: ../BruteForce.h
