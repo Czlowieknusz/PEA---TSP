@@ -15,7 +15,7 @@ public:
     void CalculatePath(unsigned) final;
 
     void CalculatePath(unsigned currentVertex, unsigned &minPrice,
-                       unsigned currentPrice, std::vector<bool> visitedVertexes);
+                       unsigned currentPrice, const std::vector<bool> &visitedVertexes);
 
     bool SetMinPriceIfLastVertex(unsigned &minPrice,
                                  unsigned currentPrice, std::vector<bool> visitedVertexes);
