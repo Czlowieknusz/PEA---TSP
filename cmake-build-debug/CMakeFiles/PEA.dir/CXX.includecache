@@ -28,23 +28,19 @@ Q:/Studia/CLion/PEA/AlgorithmTSP.h
 vector
 -
 
-Q:/Studia/CLion/PEA/Test.cpp
+Q:/Studia/CLion/PEA/Menu.cpp
+Menu.h
+Q:/Studia/CLion/PEA/Menu.h
 Test.h
 Q:/Studia/CLion/PEA/Test.h
+
+Q:/Studia/CLion/PEA/Menu.h
 BruteForce.h
 Q:/Studia/CLion/PEA/BruteForce.h
 HeldKarp.h
 Q:/Studia/CLion/PEA/HeldKarp.h
-Timer.h
-Q:/Studia/CLion/PEA/Timer.h
-vector
--
 
 Q:/Studia/CLion/PEA/Test.h
 string
--
-
-Q:/Studia/CLion/PEA/Timer.h
-windows.h
 -
 
