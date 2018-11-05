@@ -45,7 +45,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = Q:\Studia\CLion\PEA
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = Q:\Studia\CLion\PEA\cmake-build-debug
+CMAKE_BINARY_DIR = Q:\Studia\CLion\PEA\cmake-build-release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PEA.dir/depend.make
@@ -58,7 +58,7 @@ include CMakeFiles/PEA.dir/flags.make
 
 CMakeFiles/PEA.dir/main.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PEA.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PEA.dir/main.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\main.cpp.obj -c Q:\Studia\CLion\PEA\main.cpp
 
 CMakeFiles/PEA.dir/main.cpp.i: cmake_force
@@ -71,7 +71,7 @@ CMakeFiles/PEA.dir/main.cpp.s: cmake_force
 
 CMakeFiles/PEA.dir/DataLoader.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/DataLoader.cpp.obj: ../DataLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PEA.dir/DataLoader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PEA.dir/DataLoader.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\DataLoader.cpp.obj -c Q:\Studia\CLion\PEA\DataLoader.cpp
 
 CMakeFiles/PEA.dir/DataLoader.cpp.i: cmake_force
@@ -84,7 +84,7 @@ CMakeFiles/PEA.dir/DataLoader.cpp.s: cmake_force
 
 CMakeFiles/PEA.dir/Menu.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/Menu.cpp.obj: ../Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PEA.dir/Menu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PEA.dir/Menu.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\Menu.cpp.obj -c Q:\Studia\CLion\PEA\Menu.cpp
 
 CMakeFiles/PEA.dir/Menu.cpp.i: cmake_force
@@ -97,7 +97,7 @@ CMakeFiles/PEA.dir/Menu.cpp.s: cmake_force
 
 CMakeFiles/PEA.dir/HeldKarp.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/HeldKarp.cpp.obj: ../HeldKarp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PEA.dir/HeldKarp.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PEA.dir/HeldKarp.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\HeldKarp.cpp.obj -c Q:\Studia\CLion\PEA\HeldKarp.cpp
 
 CMakeFiles/PEA.dir/HeldKarp.cpp.i: cmake_force
@@ -110,7 +110,7 @@ CMakeFiles/PEA.dir/HeldKarp.cpp.s: cmake_force
 
 CMakeFiles/PEA.dir/BruteForce.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/BruteForce.cpp.obj: ../BruteForce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PEA.dir/BruteForce.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PEA.dir/BruteForce.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\BruteForce.cpp.obj -c Q:\Studia\CLion\PEA\BruteForce.cpp
 
 CMakeFiles/PEA.dir/BruteForce.cpp.i: cmake_force
@@ -123,7 +123,7 @@ CMakeFiles/PEA.dir/BruteForce.cpp.s: cmake_force
 
 CMakeFiles/PEA.dir/Test.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/Test.cpp.obj: ../Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PEA.dir/Test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PEA.dir/Test.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\Test.cpp.obj -c Q:\Studia\CLion\PEA\Test.cpp
 
 CMakeFiles/PEA.dir/Test.cpp.i: cmake_force
@@ -136,7 +136,7 @@ CMakeFiles/PEA.dir/Test.cpp.s: cmake_force
 
 CMakeFiles/PEA.dir/Timer.cpp.obj: CMakeFiles/PEA.dir/flags.make
 CMakeFiles/PEA.dir/Timer.cpp.obj: ../Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PEA.dir/Timer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PEA.dir/Timer.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEA.dir\Timer.cpp.obj -c Q:\Studia\CLion\PEA\Timer.cpp
 
 CMakeFiles/PEA.dir/Timer.cpp.i: cmake_force
@@ -171,7 +171,7 @@ PEA.exe: CMakeFiles/PEA.dir/build.make
 PEA.exe: CMakeFiles/PEA.dir/linklibs.rsp
 PEA.exe: CMakeFiles/PEA.dir/objects1.rsp
 PEA.exe: CMakeFiles/PEA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable PEA.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable PEA.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PEA.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -184,6 +184,6 @@ CMakeFiles/PEA.dir/clean:
 .PHONY : CMakeFiles/PEA.dir/clean
 
 CMakeFiles/PEA.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" Q:\Studia\CLion\PEA Q:\Studia\CLion\PEA Q:\Studia\CLion\PEA\cmake-build-debug Q:\Studia\CLion\PEA\cmake-build-debug Q:\Studia\CLion\PEA\cmake-build-debug\CMakeFiles\PEA.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" Q:\Studia\CLion\PEA Q:\Studia\CLion\PEA Q:\Studia\CLion\PEA\cmake-build-release Q:\Studia\CLion\PEA\cmake-build-release Q:\Studia\CLion\PEA\cmake-build-release\CMakeFiles\PEA.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PEA.dir/depend
 
