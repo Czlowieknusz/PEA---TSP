@@ -48,36 +48,24 @@ Q:/Studia/CLion/PEA/AlgorithmTSP.h
 vector
 -
 
-<<<<<<< HEAD
-Q:/Studia/CLion/PEA/Menu.cpp
-Menu.h
-Q:/Studia/CLion/PEA/Menu.h
-Test.h
-Q:/Studia/CLion/PEA/Test.h
-
 Q:/Studia/CLion/PEA/Menu.h
 BruteForce.h
 Q:/Studia/CLion/PEA/BruteForce.h
 HeldKarp.h
 Q:/Studia/CLion/PEA/HeldKarp.h
-
-Q:/Studia/CLion/PEA/Test.cpp
-Test.h
-Q:/Studia/CLion/PEA/Test.h
-=======
-Q:/Studia/CLion/PEA/Menu.h
->>>>>>> parent of 15a589b... BruteForce in final form.
-BruteForce.h
-Q:/Studia/CLion/PEA/BruteForce.h
-HeldKarp.h
-Q:/Studia/CLion/PEA/HeldKarp.h
-
-Q:/Studia/CLion/PEA/main.cpp
-Menu.h
-Q:/Studia/CLion/PEA/Menu.h
 
 Q:/Studia/CLion/PEA/Timer.h
 windows.h
+-
+=======
+Q:/Studia/CLion/PEA/main.cpp
+Menu.h
+Q:/Studia/CLion/PEA/Menu.h
+>>>>>>> parent of 15a589b... BruteForce in final form.
+-
+Q:/Studia/CLion/PEA/main.cpp
+Menu.h
+Q:/Studia/CLion/PEA/Menu.h
 -
 
 Q:/Studia/CLion/PEA/main.cpp
