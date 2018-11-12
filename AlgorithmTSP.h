@@ -23,6 +23,13 @@ struct CalculatedPath {
         visitedVertices_ = calculatedPath.visitedVertices_;
         path_ = calculatedPath.path_;
     }
+
+    CalculatedPath &operator=(const CalculatedPath &other) {
+        price_ = other.price_;
+        visitedVertices_ = other.visitedVertices_;
+        path_ = other.path_;
+        return *this;
+    }
 };
 
 class AlgorithmTSP {

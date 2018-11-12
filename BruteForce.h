@@ -14,9 +14,9 @@ public:
 
     double CalculatePath(unsigned) final;
 
-    void CalculatePath(unsigned currentVertex, unsigned &minPrice, CalculatedPath calculatedPath);
+    void CalculatePath(unsigned currentVertex, CalculatedPath &optimalPath, CalculatedPath calculatedPath);
 
-    bool SetMinPriceIfLastVertex(unsigned &minPrice, const CalculatedPath &calculatedPath);
+    bool SetMinPriceIfLastVertex(CalculatedPath& optimalPath, const CalculatedPath &calculatedPath);
 };
 
 

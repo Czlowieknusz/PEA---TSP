@@ -14,7 +14,7 @@ public:
 
     double CalculatePath(unsigned) final;
 
-    CalculatedPath CalculatePath(unsigned, const CalculatedPath &);
+    CalculatedPath CalculatePath(unsigned, CalculatedPath &&);
 
     unsigned FindIndexOfOptimalPath(const std::vector<CalculatedPath>&);
 

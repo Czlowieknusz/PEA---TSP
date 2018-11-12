@@ -18,15 +18,15 @@ double HeldKarp::CalculatePath(unsigned startVertex) {
 
         Timer timer;
         timer.StartCounter();
-        auto optimalPath = CalculatePath(startVertex, calculatedPath);
+        auto optimalPath = CalculatePath(startVertex, std::move(calculatedPath));
         optimalPath.price_ += graph_[optimalPath.path_[graphSize_ - 1]][startVertex];
         optimalPath.path_.push_back(startVertex);
         double measured_time = timer.GetCounter();
-        //std::cout << "Min price is equal to: " << optimalPath.price_ << std::endl;
-        //std::cout << "Measured time is equal to: " << measured_time << "s." << std::endl;
-        /*for (const auto node : optimalPath.path_) {
+        std::cout << "Min price is equal to: " << optimalPath.price_ << std::endl;
+        std::cout << "Measured time is equal to: " << measured_time << "s." << std::endl;
+        for (const auto node : optimalPath.path_) {
             std::cout << node << "; ";
-        }*/
+        }
         std::cout << std::endl;
         return measured_time;
     } else {
@@ -36,7 +36,7 @@ double HeldKarp::CalculatePath(unsigned startVertex) {
 }
 
 CalculatedPath
-HeldKarp::CalculatePath(unsigned startVertex, const CalculatedPath &calculatedPath) {
+HeldKarp::CalculatePath(unsigned startVertex, CalculatedPath &&calculatedPath) {
     if (CheckIfAllVerticesAreVisited(calculatedPath.visitedVertices_)) {
         return calculatedPath;
     }
@@ -46,9 +46,9 @@ HeldKarp::CalculatePath(unsigned startVertex, const CalculatedPath &calculatedPa
             CalculatedPath currentCalculatedPath(calculatedPath);
             currentCalculatedPath.visitedVertices_.at(i) = true;
             currentCalculatedPath.path_.push_back(i);
-            CalculatedPath calculatedPathToPushBack = CalculatePath(i, currentCalculatedPath);
+            CalculatedPath calculatedPathToPushBack = CalculatePath(i, std::move(currentCalculatedPath));
             calculatedPathToPushBack.price_ += graph_[startVertex][i];
-            pathsFound.push_back(calculatedPathToPushBack);
+            pathsFound.push_back(std::move(calculatedPathToPushBack));
         }
     }
     return pathsFound[FindIndexOfOptimalPath(pathsFound)];
