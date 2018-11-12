@@ -23,7 +23,11 @@ double HeldKarp::CalculatePath(unsigned startVertex) {
         optimalPath.path_.push_back(startVertex);
         double measured_time = timer.GetCounter();
         std::cout << "Min price is equal to: " << optimalPath.price_ << std::endl;
+<<<<<<< HEAD
         std::cout << "Measured time is equal to: " << measured_time << "s." << std::endl;
+=======
+        std::cout << "Measured time is equal to: " << measured_time << std::endl;
+>>>>>>> parent of 15a589b... BruteForce in final form.
         for (const auto node : optimalPath.path_) {
             std::cout << node << "; ";
         }
