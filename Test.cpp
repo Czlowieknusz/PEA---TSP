@@ -5,27 +5,23 @@
 #include "Test.h"
 #include "BruteForce.h"
 #include "HeldKarp.h"
-#include "Timer.h"
 #include <vector>
 
 void Test::MakeTests() {
     std::vector<std::string> fileNames(
-            {"Graph_six.txt", "Graph_seven.txt", "Graph_eight.txt", "Graph_nine.txt", "Graph_ten.txt", "Graph_eleven.txt"});
+            {/*"Graph_six.txt", "Graph_seven.txt", "Graph_eight.txt", "Graph_nine.txt", "Graph_ten.txt", "Graph_eleven.txt", */"Graph_twelve.txt"});
     for (auto &fileName : fileNames) {
         std::cout << "File name is " << fileName << std::endl;
-        CalculateBruteForce(50, fileName);
-        CalculateHeldKarp(50, fileName);
+        CalculateBruteForce(1, fileName);
+        CalculateHeldKarp(1, fileName);
     }
 }
 
 void Test::CalculateBruteForce(unsigned numberOfTests, std::string fileName) {
     BruteForce bruteForce(std::move(fileName));
-    Timer timer;
     std::vector<double> measurements(numberOfTests);
     for (unsigned i = 0; i < numberOfTests; ++i) {
-        timer.StartCounter();
-        bruteForce.CalculatePath(0);
-        measurements[i] = timer.GetCounter();
+        measurements[i] = bruteForce.CalculatePath(0);
     }
     double average_time = 0;
     for (auto &measurement : measurements) {
@@ -38,12 +34,9 @@ void Test::CalculateBruteForce(unsigned numberOfTests, std::string fileName) {
 
 void Test::CalculateHeldKarp(unsigned numberOfTests, std::string fileName) {
     HeldKarp heldKarp(std::move(fileName));
-    Timer timer;
     std::vector<double> measurements(numberOfTests);
     for (unsigned i = 0; i < numberOfTests; ++i) {
-        timer.StartCounter();
-        heldKarp.CalculatePath(0);
-        measurements[i] = timer.GetCounter();
+        measurements[i] = heldKarp.CalculatePath(0);
     }
     double average_time = 0;
     for (auto &measurement : measurements) {

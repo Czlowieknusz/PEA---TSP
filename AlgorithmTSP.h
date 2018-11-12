@@ -7,6 +7,23 @@
 
 #include "DataLoader.h"
 #include <iostream>
+#include <vector>
+
+struct CalculatedPath {
+    std::vector<unsigned> path_;
+    std::vector<bool> visitedVertices_;
+    unsigned price_;
+
+    explicit CalculatedPath(unsigned price, unsigned graphSize) : visitedVertices_(graphSize, false) {
+        price_ = price;
+    }
+
+    CalculatedPath(const CalculatedPath &calculatedPath) {
+        price_ = calculatedPath.price_;
+        visitedVertices_ = calculatedPath.visitedVertices_;
+        path_ = calculatedPath.path_;
+    }
+};
 
 class AlgorithmTSP {
 public:
@@ -17,7 +34,7 @@ public:
         delete[] graph_;
     };
 
-    AlgorithmTSP(std::string fileName) {
+    explicit AlgorithmTSP(std::string fileName) {
         DataLoader dataLoader(fileName);
         graphSize_ = dataLoader.GetGraphSizeFromFile();
         ReserveMemoryForGraph();
@@ -40,7 +57,7 @@ public:
         }
     }
 
-    virtual void CalculatePath(unsigned) = 0;
+    virtual double CalculatePath(unsigned) = 0;
 
     unsigned **graph_;
     unsigned graphSize_;

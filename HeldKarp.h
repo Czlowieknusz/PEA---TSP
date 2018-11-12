@@ -10,13 +10,15 @@
 
 class HeldKarp : public AlgorithmTSP {
 public:
-    HeldKarp(std::string);
+    explicit HeldKarp(std::string);
 
-    void CalculatePath(unsigned) final;
+    double CalculatePath(unsigned) final;
 
-    unsigned CalculatePath(unsigned, const std::vector<bool> &);
+    CalculatedPath CalculatePath(unsigned, const CalculatedPath &);
 
-    bool CheckIfAllVerticesAreVisited(const std::vector<bool> &);
+    unsigned FindIndexOfOptimalPath(const std::vector<CalculatedPath>&);
+
+    bool CheckIfAllVerticesAreVisited(const std::vector<bool > &);
 };
 
 

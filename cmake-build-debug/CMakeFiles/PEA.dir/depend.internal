@@ -6,6 +6,7 @@ CMakeFiles/PEA.dir/BruteForce.cpp.obj
  Q:/Studia/CLion/PEA/BruteForce.cpp
  Q:/Studia/CLion/PEA/BruteForce.h
  Q:/Studia/CLion/PEA/DataLoader.h
+ Q:/Studia/CLion/PEA/Timer.h
 CMakeFiles/PEA.dir/DataLoader.cpp.obj
  Q:/Studia/CLion/PEA/DataLoader.cpp
  Q:/Studia/CLion/PEA/DataLoader.h
@@ -14,6 +15,7 @@ CMakeFiles/PEA.dir/HeldKarp.cpp.obj
  Q:/Studia/CLion/PEA/DataLoader.h
  Q:/Studia/CLion/PEA/HeldKarp.cpp
  Q:/Studia/CLion/PEA/HeldKarp.h
+ Q:/Studia/CLion/PEA/Timer.h
 CMakeFiles/PEA.dir/Menu.cpp.obj
  Q:/Studia/CLion/PEA/AlgorithmTSP.h
  Q:/Studia/CLion/PEA/BruteForce.h
@@ -29,7 +31,6 @@ CMakeFiles/PEA.dir/Test.cpp.obj
  Q:/Studia/CLion/PEA/HeldKarp.h
  Q:/Studia/CLion/PEA/Test.cpp
  Q:/Studia/CLion/PEA/Test.h
- Q:/Studia/CLion/PEA/Timer.h
 CMakeFiles/PEA.dir/Timer.cpp.obj
  Q:/Studia/CLion/PEA/Timer.cpp
  Q:/Studia/CLion/PEA/Timer.h

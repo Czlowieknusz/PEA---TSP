@@ -10,9 +10,9 @@
 
 class BruteForce : public AlgorithmTSP {
 public:
-    BruteForce(std::string);
+    explicit BruteForce(std::string);
 
-    void CalculatePath(unsigned) final;
+    double CalculatePath(unsigned) final;
 
     void CalculatePath(unsigned currentVertex, unsigned &minPrice,
                        unsigned currentPrice, const std::vector<bool> &visitedVertexes);

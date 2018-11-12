@@ -5,6 +5,7 @@ CMakeFiles/PEA.dir/BruteForce.cpp.obj: ../AlgorithmTSP.h
 CMakeFiles/PEA.dir/BruteForce.cpp.obj: ../BruteForce.cpp
 CMakeFiles/PEA.dir/BruteForce.cpp.obj: ../BruteForce.h
 CMakeFiles/PEA.dir/BruteForce.cpp.obj: ../DataLoader.h
+CMakeFiles/PEA.dir/BruteForce.cpp.obj: ../Timer.h
 
 CMakeFiles/PEA.dir/DataLoader.cpp.obj: ../DataLoader.cpp
 CMakeFiles/PEA.dir/DataLoader.cpp.obj: ../DataLoader.h
@@ -13,6 +14,7 @@ CMakeFiles/PEA.dir/HeldKarp.cpp.obj: ../AlgorithmTSP.h
 CMakeFiles/PEA.dir/HeldKarp.cpp.obj: ../DataLoader.h
 CMakeFiles/PEA.dir/HeldKarp.cpp.obj: ../HeldKarp.cpp
 CMakeFiles/PEA.dir/HeldKarp.cpp.obj: ../HeldKarp.h
+CMakeFiles/PEA.dir/HeldKarp.cpp.obj: ../Timer.h
 
 CMakeFiles/PEA.dir/Menu.cpp.obj: ../AlgorithmTSP.h
 CMakeFiles/PEA.dir/Menu.cpp.obj: ../BruteForce.h
@@ -28,7 +30,6 @@ CMakeFiles/PEA.dir/Test.cpp.obj: ../DataLoader.h
 CMakeFiles/PEA.dir/Test.cpp.obj: ../HeldKarp.h
 CMakeFiles/PEA.dir/Test.cpp.obj: ../Test.cpp
 CMakeFiles/PEA.dir/Test.cpp.obj: ../Test.h
-CMakeFiles/PEA.dir/Test.cpp.obj: ../Timer.h
 
 CMakeFiles/PEA.dir/Timer.cpp.obj: ../Timer.cpp
 CMakeFiles/PEA.dir/Timer.cpp.obj: ../Timer.h
