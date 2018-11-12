@@ -22,11 +22,11 @@ double HeldKarp::CalculatePath(unsigned startVertex) {
         optimalPath.price_ += graph_[optimalPath.path_[graphSize_ - 1]][startVertex];
         optimalPath.path_.push_back(startVertex);
         double measured_time = timer.GetCounter();
-        std::cout << "Min price is equal to: " << optimalPath.price_ << std::endl;
-        std::cout << "Measured time is equal to: " << measured_time << std::endl;
-        for (const auto node : optimalPath.path_) {
+        //std::cout << "Min price is equal to: " << optimalPath.price_ << std::endl;
+        //std::cout << "Measured time is equal to: " << measured_time << "s." << std::endl;
+        /*for (const auto node : optimalPath.path_) {
             std::cout << node << "; ";
-        }
+        }*/
         std::cout << std::endl;
         return measured_time;
     } else {

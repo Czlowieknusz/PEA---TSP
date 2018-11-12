@@ -30,13 +30,17 @@ Q:/Studia/CLion/PEA/AlgorithmTSP.h
 vector
 -
 
-Q:/Studia/CLion/PEA/Menu.h
+Q:/Studia/CLion/PEA/Test.cpp
+Test.h
+Q:/Studia/CLion/PEA/Test.h
 BruteForce.h
 Q:/Studia/CLion/PEA/BruteForce.h
 HeldKarp.h
 Q:/Studia/CLion/PEA/HeldKarp.h
+vector
+-
 
-Q:/Studia/CLion/PEA/main.cpp
-Menu.h
-Q:/Studia/CLion/PEA/Menu.h
+Q:/Studia/CLion/PEA/Test.h
+string
+-
 

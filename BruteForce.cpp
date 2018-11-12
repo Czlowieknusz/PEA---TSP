@@ -11,14 +11,15 @@ BruteForce::BruteForce(std::string fileName) : AlgorithmTSP(std::move(fileName))
 
 double BruteForce::CalculatePath(unsigned startVertex) {
     if (startVertex >= 0 && startVertex < graphSize_) {
+        CalculatedPath calculatedPath(0, graphSize_);
         unsigned minPrice = std::numeric_limits<unsigned>::max();
-        std::vector<bool> visitedVertexes(graphSize_, false);
-        visitedVertexes[startVertex] = true;
+        calculatedPath.visitedVertices_[startVertex] = true;
         Timer timer;
         timer.StartCounter();
-        CalculatePath(startVertex, minPrice, 0, visitedVertexes);
+        CalculatePath(startVertex, minPrice, calculatedPath);
         double measured_time = timer.GetCounter();
-        //std::cout << "Minimal price is equal to " << minPrice << std::endl;
+        //std::cout << "Minimal price is equal to: " << minPrice << std::endl;
+        //std::cout << "Measured time is equal to: " << measured_time << "s." << std::endl;
         return measured_time;
     } else {
         std::cout << "Vertex is not a part of the graph" << std::endl;
@@ -27,32 +28,31 @@ double BruteForce::CalculatePath(unsigned startVertex) {
 }
 
 void
-BruteForce::CalculatePath(unsigned currentVertex, unsigned &minPrice, unsigned currentPrice,
-                          const std::vector<bool> &visitedVertexes) {
+BruteForce::CalculatePath(unsigned currentVertex, unsigned &minPrice, CalculatedPath calculatedPath) {
     for (unsigned vertex_index = 0; vertex_index < graphSize_; ++vertex_index) {
-        if (!visitedVertexes[vertex_index]) {
-            std::vector<bool> currentVisitedVertices = visitedVertexes;
-            currentVisitedVertices[vertex_index] = true;
-            unsigned iteration_price = currentPrice + graph_[currentVertex][vertex_index];
-            if (SetMinPriceIfLastVertex(minPrice, iteration_price, currentVisitedVertices)) {
+        if (!calculatedPath.visitedVertices_[vertex_index]) {
+            CalculatedPath currentCalculatedPath(calculatedPath);
+            currentCalculatedPath.visitedVertices_[vertex_index] = true;
+            calculatedPath.price_ += graph_[currentVertex][vertex_index];
+            if (SetMinPriceIfLastVertex(minPrice, currentCalculatedPath)) {
                 return;
             }
-            CalculatePath(vertex_index, minPrice, iteration_price, currentVisitedVertices);
+            CalculatePath(vertex_index, minPrice, currentCalculatedPath);
         }
     }
 }
 
-bool BruteForce::SetMinPriceIfLastVertex(unsigned &minPrice, unsigned currentPrice, std::vector<bool> visitedVertexes) {
+bool BruteForce::SetMinPriceIfLastVertex(unsigned &minPrice, const CalculatedPath &calculatedPath) {
     bool isLastVertex = true;
-    for (const auto isVisited : visitedVertexes) {
+    for (const auto isVisited : calculatedPath.visitedVertices_) {
         if (!isVisited) {
             isLastVertex = false;
             break;
         }
     }
     if (isLastVertex) {
-        if (minPrice > currentPrice) {
-            minPrice = currentPrice;
+        if (minPrice > calculatedPath.price_) {
+            minPrice = calculatedPath.price_;
         }
     }
     return isLastVertex;

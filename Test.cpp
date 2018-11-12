@@ -9,7 +9,7 @@
 
 void Test::MakeTests() {
     std::vector<std::string> fileNames(
-            {/*"Graph_six.txt", "Graph_seven.txt", "Graph_eight.txt", "Graph_nine.txt", "Graph_ten.txt", "Graph_eleven.txt", */"Graph_twelve.txt"});
+            {"Graph_six.txt", "Graph_seven.txt", "Graph_eight.txt", "Graph_nine.txt", "Graph_ten.txt", "Graph_eleven.txt", "Graph_twelve.txt"});
     for (auto &fileName : fileNames) {
         std::cout << "File name is " << fileName << std::endl;
         CalculateBruteForce(1, fileName);
